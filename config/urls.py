@@ -7,7 +7,7 @@ from api.views import CategoryViewSet, ManufacturerViewSet, ProductViewSet
 
 router = DefaultRouter()
 router.register('auth', UserViewSet)
-router.register('product', ProductViewSet)
+router.register('product', ProductViewSet, basename='products-viewset')
 router.register('manufacturer', ManufacturerViewSet)
 router.register('category', CategoryViewSet)
 
